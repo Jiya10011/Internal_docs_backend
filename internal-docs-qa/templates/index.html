@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-100">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Internal Docs Q&A Agent</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex items-center justify-center min-h-screen px-4">
+    <div class="bg-white shadow-xl rounded-2xl w-full max-w-3xl p-8 space-y-6">
+      <h1 class="text-3xl font-bold text-center text-blue-700">💬 Internal Docs Q&A Agent</h1>
+
+      <div>
+        <label for="question" class="block text-lg font-medium text-gray-800 mb-2">
+          Ask a question
+        </label>
+        <textarea
+          id="question"
+          rows="4"
+          class="w-full border border-gray-300 rounded-2xl p-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          placeholder="e.g., What is our leave policy?"></textarea>
+      </div>
+
+      <div class="flex justify-end">
+        <button
+          id="submit-btn"
+          class="bg-blue-600 text-white px-6 py-2 rounded-2xl hover:bg-blue-700 transition duration-200">
+          Submit
+        </button>
+      </div>
+
+      <div id="response-box" class="hidden border-t pt-4">
+        <h2 class="text-xl font-semibold text-gray-800 mb-2">📄 Answer:</h2>
+        <div id="answer" class="whitespace-pre-line text-gray-700 bg-gray-100 p-4 rounded-xl"></div>
+      </div>
+    </div>
+
+    <script>
+      const submitBtn = document.getElementById("submit-btn");
+      const responseBox = document.getElementById("response-box");
+      const answerText = document.getElementById("answer");
+
+      submitBtn.addEventListener("click", async () => {
+        const question = document.getElementById("question").value.trim();
+        if (!question) return;
+
+        answerText.textContent = "Thinking...";
+        responseBox.classList.remove("hidden");
+
+        try {
+          const res = await fetch("http://localhost:5000/ask", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ question }),
+          });
+
+          const data = await res.json();
+          answerText.textContent = data.answer || "Sorry, no answer found.";
+        } catch (err) {
+          answerText.textContent = "⚠️ Error connecting to the server.";
+        }
+      });
+    </script>
+  </body>
+</html>

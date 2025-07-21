@@ -1,0 +1,73 @@
+Our leave policy allows 18 days of paid leave per year.
+Team members must submit their leave request via the HR portal.
+The codebase uses Python, React, and FAISS for document search.
+Sensitive documents should be encrypted before sharing.
+
+Leave Policy
+
+All full-time employees are entitled to the following types of leave:
+
+1. Annual Leave:
+- 20 days per year.
+- Must be approved at least 5 working days in advance.
+- Unused annual leave will lapse at the end of the calendar year.
+
+2. Sick Leave:
+- 10 days per year.
+- Must notify your reporting manager and HR before 10 AM on the day of absence.
+- Doctor’s certificate is required for leaves longer than 2 days.
+
+3. Emergency Leave:
+- Can be availed in case of urgent personal matters.
+- Inform your manager as soon as possible.
+
+All leaves must be applied via the HR portal.
+
+Refund Policy
+
+Our refund policy applies to all products and services purchased through our official website.
+
+1. Full Refund:
+- Available within 14 days of purchase.
+- Customer must provide valid proof of payment.
+- Refund will be processed within 7 business days.
+
+2. Partial Refund:
+- If the service has already been partially used.
+- Based on percentage of usage completed.
+
+3. Non-Refundable Items:
+- Customized or personalized services.
+- Downloads or one-time-use digital licenses.
+
+To request a refund, contact support@company.com with the subject line “Refund Request”.
+
+Note: All refund decisions are subject to company review.
+
+Company General Instructions
+
+1. Work Hours:
+- Official hours are 9:30 AM to 6:30 PM, Monday to Friday.
+- Remote working is allowed with prior approval.
+
+2. Communication:
+- All employees must use their official email ID for work communication.
+- Slack is the preferred internal communication tool.
+
+3. Asset Requests:
+- Request laptops, monitors, or other peripherals via the IT request form.
+- Approval will be granted by your team lead.
+
+4. Design Assets:
+- Submit requests using the internal Design Request Form.
+- Turnaround time: 2–3 working days.
+
+5. Security:
+- Do not share passwords or access credentials.
+- Always lock your computer when leaving your desk.
+
+6. Emergency Contacts:
+- For office-related emergencies, call the admin at +91-XXXXXXXXXX.
+- For health emergencies, call the helpline +91-YYYYYYYYYY.
+
+Refer to the employee handbook for full policies.
